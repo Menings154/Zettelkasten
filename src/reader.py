@@ -26,7 +26,7 @@ class Zettelreader:
             data = file.readlines()
         for line in data:
             if line[0:3] == '###':
-                return line[4:]
+                return line[3:]
 
     def get_text(self, id):
         for count, value in enumerate(self.all_ids):
